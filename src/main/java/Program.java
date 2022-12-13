@@ -38,7 +38,7 @@ public class Program {
     }
 
     public static Number readNextNumber(Scanner scanner) {
-        Number num1;
+
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
         } else {
