@@ -45,11 +45,11 @@ public class SimpleOperation {
             case '+':
                 return bigDecimal1.add(bigDecimal2).floatValue();
             case '-':
-                return bigDecimal1.subtract(bigDecimal2);
+                return bigDecimal1.subtract(bigDecimal2).floatValue();
             case '*':
-                return bigDecimal1.multiply(bigDecimal2);
+                return bigDecimal1.multiply(bigDecimal2).floatValue();
             case '/':
-                return bigDecimal1.divide(bigDecimal2);
+                return bigDecimal1.divide(bigDecimal2).floatValue();
             default:
                 throw new IllegalArgumentException("Error! Enter correct operator " + op);
         }
