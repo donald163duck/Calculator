@@ -9,12 +9,12 @@ public class SimpleOperationTest {
     public void SimpleOperation () {
 
             SimpleOperation simpleOperation = new SimpleOperation();
-            simpleOperation.setNum1(10);
-            simpleOperation.setNum2(2);
-            simpleOperation.setOp('*');
+            simpleOperation.setNum1(10.10);
+            simpleOperation.setNum2(2.2);
+            simpleOperation.setOp('/');
 
             Number result = simpleOperation.getResult();
-            Float rt = 20.0F;
+            Float rt = 5.0F;
             assertEquals(rt, result);
             System.out.println("Test OK!");
     }

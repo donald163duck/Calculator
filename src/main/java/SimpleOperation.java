@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class SimpleOperation {
     private Number num1;
@@ -45,11 +46,11 @@ public class SimpleOperation {
             case '+':
                 return bigDecimal1.add(bigDecimal2).floatValue();
             case '-':
-                return bigDecimal1.subtract(bigDecimal2).floatValue();
+                return bigDecimal1.subtract(bigDecimal2);
             case '*':
                 return bigDecimal1.multiply(bigDecimal2).floatValue();
             case '/':
-                return bigDecimal1.divide(bigDecimal2).floatValue();
+                return bigDecimal1.divide(bigDecimal2, 2, RoundingMode.HALF_UP).floatValue();
             default:
                 throw new IllegalArgumentException("Error! Enter correct operator " + op);
         }
